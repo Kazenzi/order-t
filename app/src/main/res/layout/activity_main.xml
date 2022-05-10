@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/mbtncancel"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="45dp"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/mbtnlogout"
+        app:layout_constraintTop_toBottomOf="@+id/medtpaymode"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <TextView
+        android:id="@+id/mtvorder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:text="PICK UP DETAILS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/medtHoseno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Houseno"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/medtdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvorder" />
+
+    <EditText
+        android:id="@+id/medtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="collection date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/medtpaymode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medtHoseno" />
+
+    <EditText
+        android:id="@+id/medtpaymode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Mode of payment"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mbtnlogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medtdate" />
+
+    <Button
+        android:id="@+id/mbtnlogout"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="45dp"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medtpaymode" />
+</androidx.constraintlayout.widget.ConstraintLayout>
